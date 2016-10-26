@@ -2,6 +2,6 @@
   <td><%= hotel.name %></td>
   <td><%= hotel.address %></td>
   <td><%= hotel.description %></td>
-  <td><%= link_to "Reviews", hotel %></td>
+  <td><%= link_to "View Reviews", reviews_path(hotel_id: hotel.id) %></td>
   <td><%= link_to "Write a Review", new_review_path(hotel_id: hotel.id) %></td>
  </tr>

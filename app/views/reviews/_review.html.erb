@@ -1,8 +1,6 @@
-<li id="review-<%= review.id %>">
-	<span class="user"><%= review.user.name %></span>
-  <span class="label"><%= review.label %></span>
-  <span class="desc"><%= review.description %></span>
-  <span class="timestamp">
-    Posted <%= time_ago_in_words(review.created_at) %> ago.
-  </span>
-</li>
+<tr>
+  <td><%= review.label %></td>
+  <td><%= review.description %></td>
+  <td><%= review.user.email %></td>
+  <td> Posted <%= time_ago_in_words(review.created_at) %> ago. </td>
+ </tr>
