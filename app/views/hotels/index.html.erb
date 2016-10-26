@@ -1,0 +1,11 @@
+<h2> List of Hotels </h2>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Description</th>
+    <th> </th>
+  </tr>
+  <% @hotels.each do |hotel| %>
+    <%= render partial: "hotel", locals: {hotel: hotel} %>
+	<% end %>
